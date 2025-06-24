@@ -200,7 +200,7 @@ with tab4:
             }
         </style>
 
-        <form action="https://formspree.io/f/mwkgbnqa" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/xjkrazqy" method="POST" class="contact-form">
             <div class="form-row">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
