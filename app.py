@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 import streamlit.components.v1 as components
 from streamlit_lottie import st_lottie
+import os
 
 
 # --- Config ---
