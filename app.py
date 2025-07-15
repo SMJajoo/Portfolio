@@ -87,6 +87,8 @@ with tab1:
             - Standardized purchase processes, managed 70+ proposals, and reduced vendor selection time by developing an application based on TOPSIS.
             - Improved assembly line efficiency by 28%, providing actionable insights with a comprehensive PowerBI dashboard that visualizes line parameters.
             """)
+        
+        
 
         # st.markdown("### 🔧 Tech Stack")
         # st.markdown("**Languages**: Python, R, Java, SQL, Spark")
@@ -147,6 +149,15 @@ with tab2:
         if os.path.exists("gherkin_generator.pdf"):
             with open("gherkin_generator.pdf", "rb") as file:
                 st.download_button("📄 Download Project Details (PDF)", data=file, file_name="Vehicle_Gherkin_Generator.pdf", mime="application/pdf")
+
+    with st.expander("🧑‍💼 CareerCatalyst - Job Application Coach"):
+        st.write("""
+        - Built an AI-powered assistant that extracts job descriptions, optimizes CVs with job-matching keywords, and generates personalized interview quizzes using Gemini LLM.
+        - Streamlined the job prep process by integrating resume enhancement, recruiter discovery, and intelligent quiz-based readiness checks in a single tool.
+        """)
+        if os.path.exists("CareerCatalyst.pdf"):
+            with open("CareerCatalyst.pdf", "rb") as file:
+                st.download_button("📄 Download Project Details (PDF)", data=file, file_name="CareerCatalyst.pdf", mime="application/pdf")
 
 
 # --- Resume & Skills Tab ---
