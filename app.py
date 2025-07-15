@@ -97,38 +97,55 @@ with tab1:
 
 
 # --- Projects Tab ---
+# --- Projects Tab ---
 with tab2:
-    # st.header("📂 Featured Projects")
     st_lottie(lottie_projects, height=200)
 
-    with st.expander("📝 NoteGenie - Smart AI Study Assistant"):
+    with st.expander("📝 Sikha De Re Baba - Smart AI Study Assistant"):
         st.write("""
         - Developed an AI-powered learning assistant for students using RAG (Retrieval-Augmented Generation) to generate context-aware notes, quizzes, and personalized feedback from academic PDFs—enhancing study efficiency and retention.
-        - Built an interactive app with persistent session state, enabling students to seamlessly navigate between tasks without data loss—improving usability and engagement in self-paced learning environments. 
+        - Built an interactive app with persistent session state, enabling students to seamlessly navigate between tasks without data loss—improving usability and engagement in self-paced learning environments.
         """)
-        # st.image("https://images.unsplash.com/photo-1584697964403-724adfa0fa2e", caption="NoteGenie Demo Screenshot", use_column_width=True)
-        # st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ", format="video/mp4")
+        if os.path.exists("sikhaderebaba.pdf"):
+            with open("sikhaderebaba.pdf", "rb") as file:
+                st.download_button("📄 Download Project Details (PDF)", data=file, file_name="Sikha_De_Re_Baba.pdf", mime="application/pdf")
 
     with st.expander("💊 Unified Medical Service"):
         st.write("""
         - Built a web-based prescription generator to streamline clinical workflows, enabling doctors to instantly create patient prescriptions with customizable dosage, test recommendations, and health inputs.
         - Integrated medicine inventory tracking system, that enabled doctors to adjust prescriptions transparently, maintaining patient trust, while automating out-of-stock item reordering to streamline inventory management.
         """)
-        # st.image("https://images.unsplash.com/photo-1588776814546-ec1e55b23b4d", caption="UMS Interface Example", use_column_width=True)
+        if os.path.exists("ums.pdf"):
+            with open("ums.pdf", "rb") as file:
+                st.download_button("📄 Download Project Details (PDF)", data=file, file_name="Unified_Medical_Service.pdf", mime="application/pdf")
 
     with st.expander("🔍 Browser Mate - AI Monitoring Extension"):
         st.write("""
         - Built a real-time web monitoring extension that reduced access to age-inappropriate sites, using Twilio API for instant SMS alerts.
         - Integrated OpenAI based content summarization, improving parental control through AI-generated summaries of visited URLs.
         """)
-        # st.video("https://www.youtube.com/watch?v=2ZIpFytCSVc")
+        if os.path.exists("BrowserMate.pdf"):
+            with open("BrowserMate.pdf", "rb") as file:
+                st.download_button("📄 Download Project Details (PDF)", data=file, file_name="BrowserMate.pdf", mime="application/pdf")
+    
+    with st.expander("🏠 Rahgir - AI-Powered Airbnb Property Comparator"):
+        st.write("""
+        - Built a web app to compare Airbnb listings, offering smart summaries of price, reviews, and amenities.
+        - Integrated Folium maps and geocoding to visually locate listings with interactive popups and coordinate data.
+        """)
+        if os.path.exists("Rahgir.pdf"):
+            with open("Rahgir.pdf", "rb") as file:
+                st.download_button("📄 Download Project Details (PDF)", data=file, file_name="Rahgir.pdf", mime="application/pdf")
+    
+    with st.expander("🧪 Vehicle Gherkin Scenario Generator"):
+        st.write("""
+        - Developed a Streamlit app that converts natural language vehicle test scenarios into Gherkin syntax using Gemini AI and RAG-based template retrieval.
+        - Enables auto-generation of BDD test cases for faster, standardized vehicle software validation workflows.
+        """)
+        if os.path.exists("gherkin_generator.pdf"):
+            with open("gherkin_generator.pdf", "rb") as file:
+                st.download_button("📄 Download Project Details (PDF)", data=file, file_name="Vehicle_Gherkin_Generator.pdf", mime="application/pdf")
 
-    # with st.expander("💳 Big Data - Credit Card Fraud Detection"):
-    #     st.write("""
-    #     - Examined a large-scale imbalanced dataset of 2M+ transactions, detecting fraudulent activity in just 0.172% of cases.
-    #     - Applied SMOTE+ENN pre-processing to handle imbalance, resulting an improvement in fraud detection using Apache Spark on Databricks.
-    #     """)
-        # st.image("https://images.unsplash.com/photo-1605902711622-cfb43c4437d1", caption="Fraud Detection Workflow", use_column_width=True)
 
 # --- Resume & Skills Tab ---
 with tab3:
