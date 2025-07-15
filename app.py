@@ -94,13 +94,14 @@ with tab1:
         # st.markdown("**Tools**: GCP, AWS, Docker, Tableau, Power BI, Databricks")
 
     with col2:
-        st_lottie(lottie_coding, height=300)
+        # st_lottie(lottie_coding, height=300)
+        st_lottie(lottie_projects, height=300)
 
 
 # --- Projects Tab ---
 # --- Projects Tab ---
 with tab2:
-    st_lottie(lottie_projects, height=200)
+    # st_lottie(lottie_projects, height=200)
 
     with st.expander("📝 Sikha De Re Baba - Smart AI Study Assistant"):
         st.write("""
