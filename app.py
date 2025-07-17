@@ -254,25 +254,25 @@ with tab5:
     st.markdown("Here are some kind words shared by my colleagues and mentors. Click their names to view their full LinkedIn profiles:")
 
     # Recommendation 1
+    st.markdown("**[Yayra Adugu](https://www.linkedin.com/in/yayra-adugu-71a86788/)** - Jaguar Land Rover")
     st.image("Recommendation_Yayra_Adugu.png", use_column_width=True)
-    st.markdown("**[Yayra Adugu](https://www.linkedin.com/in/yayra-adugu)** - Jaguar Land Rover")
 
     # Recommendation 2
-    st.image("Recommendation_Anthony.png", use_column_width=True)
     st.markdown("**[Anthony Trowbridge](https://www.linkedin.com/in/anthonytrowbridgecitp/)** - University of Nottingham")
-
+    st.image("Recommendation_Anthony.png", use_column_width=True)
+    
     # Recommendation 3
-    st.image("Recommendation_Tapesh_Mundhra.png", use_column_width=True)
     st.markdown("**[Tapesh Mundhra](https://www.linkedin.com/in/tapesh-mundhra-833a9222/)** - Zebra Technologies")
-
+    st.image("Recommendation_Tapesh_Mundhra.png", use_column_width=True)
+    
     # Recommendation 4
-    st.image("Recommendation_Abhishek.png", use_column_width=True)
     st.markdown("**[Abhishek Bhagat](https://www.linkedin.com/in/abhishekpbhagat/)** - Zebra Technologies")
-
+    st.image("Recommendation_Abhishek.png", use_column_width=True)
+    
     # Recommendation 5
-    st.image("Recommendation_Mahathi.png", use_column_width=True)
     st.markdown("**[Mahathi Devarakonda](https://www.linkedin.com/in/mahathi-devarakonda-791290236/)** - Zebra Technologies")
-
+    st.image("Recommendation_Mahathi.png", use_column_width=True)
+    
 
 # --- Footer ---
 st.markdown("---")
