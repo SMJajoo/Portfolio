@@ -162,6 +162,14 @@ with tab2:
                 st.download_button("📄 Download Project Details (PDF)", data=file, file_name="CareerCatalyst.pdf", mime="application/pdf")
 
 
+    with st.expander("🧑‍💼 Daily Dev Digest - A Personalised Daily Newspaper for Techies"):
+        st.write("""
+        - Built a mobile-friendly app that delivers personalized daily insights from GitHub, research papers, and tech blogs to help developers stay updated with emerging trends.
+        - Integrated intelligent summarization to transform complex technical content into clear, actionable knowledge for software professionals.""")
+        if os.path.exists("Daily Dev Digest.pdf"):
+            with open("Daily Dev Digest.pdf", "rb") as file:
+                st.download_button("📄 Download Project Details (PDF)", data=file, file_name="Daily Dev Digest.pdf", mime="application/pdf")
+
 # --- Resume & Skills Tab ---
 with tab3:
     st.subheader("🎓 Education")
