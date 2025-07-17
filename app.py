@@ -44,7 +44,7 @@ with tab1:
     with col1:
         st.title("Hello, I'm Sanskruti 👋")
         st.markdown("""
-        I'm a Data Scientist with a strong background in Machine Learning, AI, and NLP.  
+        I'm a Data Scientist with a strong background in Software Engineering and Artificial Intelligence.  
         Currently working at **Jaguar Land Rover**, I've also contributed at **Zebra Technologies**, **Tata Motors**, and the **University of Nottingham**.
         """)
 
