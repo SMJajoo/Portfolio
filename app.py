@@ -192,20 +192,21 @@ with tab3:
     - **Apps & Tools**:  VSCode, R-studio, Eclipse, Tableau, Power BI, Git, JIRA, Confluence, Data bricks, Docker, AWS, GCP, Label Studio
     """)
 
-    st.subheader("📄 Resume")
-    import os
-    cv_path = "CV_Sanskruti_Jajoo.pdf"
-    if os.path.exists(cv_path):
-        with open(cv_path, "rb") as file:
-            st.download_button("📥 Download My CV", data=file, file_name="Sanskruti_Jajoo_CV.pdf", mime="application/pdf")
-    else:
-        st.warning("CV file not found. Please upload `CV_Sanskruti_Jajoo.pdf` to the app directory.")
+    # st.subheader("📄 Resume")
+    # import os
+    # cv_path = "CV_Sanskruti_Jajoo.pdf"
+    # if os.path.exists(cv_path):
+    #     with open(cv_path, "rb") as file:
+    #         st.download_button("📥 Download My CV", data=file, file_name="Sanskruti_Jajoo_CV.pdf", mime="application/pdf")
+    # else:
+    #     st.warning("CV file not found. Please upload `CV_Sanskruti_Jajoo.pdf` to the app directory.")
 
 
 # --- Contact Tab ---
 with tab4:
     st.subheader("📫 Contact Me")
-    st.markdown("Use the form below or message me on [LinkedIn](https://www.linkedin.com/in/sanskruti-jajoo)")
+    st.markdown("Use the form below to request CVor asked any questions about my work."
+    "or message me on [LinkedIn](https://www.linkedin.com/in/sanskruti-jajoo)")
 
     contact_form = """
         <style>
